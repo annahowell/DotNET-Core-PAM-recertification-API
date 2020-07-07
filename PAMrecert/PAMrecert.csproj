@@ -1,0 +1,75 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <noWarn>1591</noWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="15.0.5" />
+    <PackageReference Include="NLog" Version="4.7.2" />
+    <PackageReference Include="Microsoft.OpenApi" Version="1.1.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="5.4.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="5.4.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="5.4.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="5.4.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Filters" Version="5.1.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.4.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.4">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="EfCoreTemporalTable" Version="1.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DTOs\ServiceController\" />
+    <Folder Include="DTOs\RecertCycleController\" />
+    <Folder Include="Services\" />
+    <Folder Include="DTOs\CsvUpload\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="DTOs\PatchDto.cs" />
+    <Compile Remove="DTOs\RoleController\ServicePrivDTO_unused.cs" />
+    <Compile Remove="Models8\PAML01Context.cs" />
+    <Compile Remove="Models8\RecertCycleTable.cs" />
+    <Compile Remove="Models8\ServiceTable.cs" />
+    <Compile Remove="Models8\RoleUserLink.cs" />
+    <Compile Remove="Models8\UserTable.cs" />
+    <Compile Remove="Models8\ServiceUserLink.cs" />
+    <Compile Remove="Models8\RoleServicePrivLink.cs" />
+    <Compile Remove="Models8\RoleTable.cs" />
+    <Compile Remove="Models8\ServicePrivLink.cs" />
+    <Compile Remove="Models8\PrivTable.cs" />
+    <Compile Remove="DTOs\RecertCycleController\RecertCyclePatchDTO.cs" />
+    <Compile Remove="DTOs\ServiceController\ServicePrivsDTO.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Models\.DS_Store" />
+    <None Remove="obj\Debug\netcoreapp3.1\PAMrecert.csprojAssemblyReference.cache" />
+    <None Remove="obj\Debug\netcoreapp3.1\PAMrecert.csprojAssemblyReference.cache" />
+    <None Remove="obj\Debug\netcoreapp3.1\PAMrecert.csprojAssemblyReference.cache" />
+    <None Remove="obj\Debug\netcoreapp3.1\PAMrecert.csprojAssemblyReference.cache" />
+    <None Remove="obj\Debug\netcoreapp3.1\PAMrecert.csprojAssemblyReference.cache" />
+    <None Remove="DTOs\PrivController\PrivCsvDTO.cs" />
+    <None Remove="DTOs\PrivController\PrivCsvDTOmap.cs" />
+    <None Remove="DTOs\ServiceController\ServiceCsvDTO.cs" />
+    <None Remove="DTOs\ServiceController\ServiceCsvDTOmap.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="**/*" />
+    <None Include="**/*" />
+    <None Include="**/*" />
+    <None Include="**/*" />
+    <None Include="**/*" />
+    <None Include="DTOs\CsvUpload\PrivCsvDTO.cs" />
+    <None Include="DTOs\CsvUpload\PrivCsvDTOmap.cs" />
+    <None Include="DTOs\CsvUpload\ServiceCsvDTO.cs" />
+    <None Include="DTOs\CsvUpload\ServiceCsvDTOmap.cs" />
+    <None Include="..\.editorconfig" />
+  </ItemGroup>
+</Project>
